@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="My WDD 231 course home page at BYU-Idaho. Explore my web development courses and learning journey.">
+
+    <meta name="author" content="Opeyemi Ajayi">
+
+    <title>Home | WDD 231 | Opeyemi Ajayi</title>
+
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/logo.svg" alt="Site logo" class="logo">
+            <span class="site-name">Opeyemi Ajayi</span>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="main-grid">
+
+            <section class="about">
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Opeyemi Ajayi. I am a student
+                    at Brigham Young University-Idaho studying
+                    software development. I enjoy learning about
+                    technology, web development, and programming.
+                    This website showcases my learning journey
+                    in WDD 231.
+                </p>
+            </section>
+
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/student.jpg" alt="Student photograph">
+            </section>
+
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="course-buttons">
+                    <button class="filter-btn selected" data-filter="ALL">All Courses</button>
+                    <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                    <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+                </div>
+
+                <div id="course-container" class="course-container">
+                    <!-- Courses are displayed using JavaScript -->
+                </div>
+
+                <p id="credit-total">Total Credits: 0</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Opeyemi Ajayi | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
